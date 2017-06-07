@@ -1,6 +1,7 @@
 # Signbase Application
 
 This is purely an Ionic app with TypeScript. It is still in development.
+Using ionic 3.x and angular 4
 
 
 ## Important!
