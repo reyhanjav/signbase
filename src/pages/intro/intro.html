@@ -1,0 +1,39 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <h2 class="slide-title">
+        Selamat datang di Signbase
+      </h2>
+      <p>
+        Aplikasi pencari sinyal dan menampilkan data sinyal untuk kamu
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2 class="slide-title" >ISP</h2>
+      <p><b>Signbase</b> Signbase dapat menampilkan data sinyal isp yang ingin kamu gunakan di tempat tertentu</p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2 class="slide-title">WIFI</h2>
+      <p>Signbase dapat menampilkan data sinyal <b>WIFI</b> pada tempat tempat nongkrong yang biasa kamu gunakan</p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2 class="slide-title">Siap menggunakan signbase?</h2>
+      <button ion-button icon-right large clear (click)="startApp()">
+        Sign in
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
